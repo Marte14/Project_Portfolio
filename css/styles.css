@@ -1,0 +1,26 @@
+.background{
+	margin:0;
+	padding: 20;
+	background-image: url('../images/homebckg.jpeg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 1000
+}
+.headertext{
+	align-self: center;
+	margin-top: 150px;
+	padding: 20;
+
+}
+.background2{
+	margin:0;
+	padding: 20;
+	/*background-size: 100%;*/
+
+
+	
+}
+.image{
+	padding: 1000px;
+}
