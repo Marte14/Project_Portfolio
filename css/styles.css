@@ -1,11 +1,11 @@
 .background{
-	margin-top:50px;
+	margin-top:0px;
 	background-image: url('../images/homebckg.jpeg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
-	padding: 50px;
+	height: 700px;
+	padding: 0px;
 
 
 }
@@ -16,38 +16,76 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
-	padding: 50px;
+	height: 800px;
+	padding-bottom: 100px;
 
 
 }
 .background3{
-	margin:20;
+	margin:0;
 	/*padding: 20;*/
 	background-image: url('../images/contact.jpeg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
-	padding-top: 70px;
+	height: 650px;
+	padding-top: 0px;
+	align-self: baseline;
+
 
 
 }
+.navlocal{
+	border-bottom: #ccbe12 2px dotted;
+	padding-top:30px;
+	padding-bottom: 0px;
+	text-align: right;
+	font-family: initial;
+
+	
+}
 
 .headertext{
-	align-self: left;
+	margin: 15px; 
+	padding-top: 370px;
+	font-family: initial;
+	text-align: left;
+	padding-left: 50px;
+	
+
+}
+.headertext2{
 	margin: 10px; 
-	padding: 15px;
+	padding-right: 15px;
+	font-family: initial;
+	border-left: #ccbe12 1px solid;
+	padding:10px;
+	
+
+}
+.headertext3{
+	margin: 10px; 
+	padding: 20px;
+	border: #fefff4 2px solid;
+	background-color: #ffffff;
+	box-shadow: 2px 3px #888888;
 	
 
 }
 
 .imgabout{
 	align-self: center;
-	margin: 10px;
-	padding: 10px;
+	margin: 20px;
+	width:600px;
+    height: 370px;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 30px;
 }
 .page{
+	align-self: right;
 	padding-top: 110px;
 	padding-bottom: 60px;
 }
+
