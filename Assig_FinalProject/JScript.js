@@ -17,7 +17,16 @@
 		}
 
 
-		var booklist = [];
+		var booklist = [
+		{title:'The Great Gatsby', author: 'F. Scott Fitzgerald', bookId: 2, totalBooks: 9},
+		{title:'The Grapes of Wrath', author: 'John Steinbeck', bookId: 3, totalBooks: 5},
+		{title:'Ulysses', author: 'James Joyce', bookId: 4, totalBooks: 13},
+		{title:'Nineteen Eighty-Four', author: 'John Steinbeck', bookId: 5, totalBooks: 11},
+ 		{title:'Lolita', author: 'Vladimir Nabokov', bookId: 6, totalBooks: 12},
+ 		{title:'Catch-22', author: 'by Joseph Helle', bookId: 7, totalBooks: 10},
+		
+
+		];
 		function book(){
 			return{
 				title: document.getElementById('title').value.trim(),
@@ -34,6 +43,7 @@
 
 			}
 		} 
+
 
 		function saveData(){
 			booklist.push(book());
@@ -81,7 +91,7 @@
 				if (num != undefined){
 					 console.log(num)
 					booklist[num].totalBooks = booklist[num].totalBooks - document.getElementById('quantity').value;
-					document.getElementById('bkListOut').innerHTML = '<br>' + booklist[num].title + " has been Checked Out!. Total Of This Title Available Now" + booklist[num].totalBooks ;	
+					document.getElementById('bkListOut').innerHTML = '<br>' + booklist[num].title + 'has been Checked Out by: ' + booklist[num].borrower + '!. Total Of This Title Available Now: ' + booklist[num].totalBooks ;	
 
 				}else{
 					alert(document.getElementById('titleOut').value + " Is Not Available!");

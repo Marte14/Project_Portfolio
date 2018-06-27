@@ -6,7 +6,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  
+
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	 
 
@@ -15,19 +15,20 @@
 </head>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
-			<h1 >Onittamo University Book Database </h1>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-md-2">
-			<h4 id="date">Today's Date</h4>
+			</div>
+			<div class="col-md-8">
+				<h1 >Onittamo University Book Database </h1>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-md-2">
+				<h4 id="date">Today's Date</h4>
 			</div>
 			<div class="col-md-6">
 				<h4><strong> Add, Search, Check Out And Return Books</strong> By Title, Author Or Index Id Number.</h4>
 			</div>
-		</div>
+			</div>
 			<div class="row">
 				<div class="col">
 					<ul class="nav nav-tabs">
@@ -35,45 +36,44 @@
 					    <li><a data-toggle="tab" href="#search" >Search Book</a></li>
 					    <li><a data-toggle="tab" href="#checkOut">Check Out Book</a></li>
 					</ul>
-				<br>
+					<br>
 				</div>
 				<div class="tab-content">
-	  			<div id= "add" class="tab-pane fade in active">
-					<input type="text" id="title" placeholder="Title">
-					<input type="text" id="author" placeholder="Author">
-					<input type="number" id="bookId" placeholder="Index Id">
-					<input type="number" id="total" placeholder="Total Of Books">
-					<input type="button" value="Add Book" onclick="saveData()">
-					<br>
-					<br>
-					<h5><strong>Note: </strong> </h5>
-					<ul id = "bookList"></ul>
+	  				<div id= "add" class="tab-pane fade in active">
+						<input type="text" id="title" placeholder="Title">
+						<input type="text" id="author" placeholder="Author">
+						<input type="number" id="bookId" placeholder="Index Id">
+						<input type="number" id="total" placeholder="Total Of Books">
+						<input type="button" value="Add Book" onclick="saveData()">
+						<br>
+						<br>
+						<h5><strong>All Books: </strong></h5>
+						<ul id = "bookList"></ul>
 
+					</div>
+					<div id= "search" class=" tab-pane fade ">
+						<input type="number" id="bookIdSearch" placeholder="Index Id">
+						<input type="text" id="titleSearch" placeholder="Title">
+						<input type="text" id="authorSearch" placeholder="Author">
+						<input type="button" value="Search" onclick="searchData()">
+						<ul id = "bkListSearch"></ul>
+					</div>
+					<div id= "checkOut" class=" tab-pane fade ">
+						<input type="text" id="titleOut" placeholder="Title">
+						<input type="text" id="authorOut" placeholder="Author">
+						<input type="number" id="bookIdOut" placeholder="Index Id">
+						<input type="number" id="quantity" placeholder="totalBooks">
+						<input type="text" id="borrower" placeholder="Borrower's Full Name">
+						<input type="button" value="Check Out" onclick="checkOut()">
+						<ul id = "bkListOut"></ul>
+					</div>
 				</div>
-				<div id= "search" class=" tab-pane fade ">
-					<input type="number" id="bookIdSearch" placeholder="Index Id">
-					<input type="text" id="titleSearch" placeholder="Title">
-					<input type="text" id="authorSearch" placeholder="Author">
-					<input type="button" value="Search" onclick="searchData()">
-					<ul id = "bkListSearch"></ul>
-				</div>
-				<div id= "checkOut" class=" tab-pane fade ">
-					<input type="text" id="titleOut" placeholder="Title">
-					<input type="text" id="authorOut" placeholder="Author">
-					<input type="number" id="bookIdOut" placeholder="Index Id">
-					<input type="number" id="quantity" placeholder="totalBooks">
-					<input type="text" id="borrower" placeholder="Borrower's Full Name">
-					<input type="button" value="Check Out" onclick="checkOut()">
-					<ul id = "bkListOut"></ul>
-				</div>
-				
-				
-
-
-	  		</div>
+			</div>
 		</div>
 	</div>
-</div>
+
+
+
 <script src="JScript.js"></script>		
 </body>
 </html>
